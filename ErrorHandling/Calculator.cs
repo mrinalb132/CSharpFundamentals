@@ -18,9 +18,13 @@ namespace ErrorHandling
                 case "/": return n1 / n2;
                 default:
                     {
+                        //throw new Exception("The operation is invalid");
                         throw new ArgumentOutOfRangeException(nameof(operation), "The operation is not supported");
                     }
             }
         }
     }
 }
+
+
+//System.Exception
